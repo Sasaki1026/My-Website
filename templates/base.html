@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- css連結 -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- JQuery連結 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+    <!-- JS連結 -->
+    <script src="/static/js/scripts.js"></script>     
+    <!-- FontAwesome 連結 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Bootstrap 連結 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="all-container">
+        <!-- L -->
+        <div class="left-container">
+            <!-- nav  bar -->
+            <nav id="sidebar">
+                <!-- button -->
+                <button id="collapse" type="button" class="collapse-btn">
+                    <i class="fa-solid fa-align-justify"></i>
+                </button>
+                <!-- icon -->
+                <div style="text-align: center;"><img id="saintess" src="/static/images/saintess.jpg"></div>
+                <ul class="list-unstyled">
+
+                    <p>Sasaki's <br> World</p>
+
+                    <li>
+                        <a href="/">首頁&nbsp;&nbsp;Home<i class="fa-solid fa-house-chimney"></i></a>
+                    </li>
+                    <li>
+                        <a href="/about">個人簡介&nbsp;&nbsp;About <i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <li>
+                        <a href="#sublist" data-bs-toggle="collapse" id="dropdown">作品&nbsp;&nbsp;Works<i class="fa-sharp fa-solid fa-briefcase"></i></a>
+                        <ul id="sublist" class="list-unstyled">
+                            <li>
+                                <a href="/work1">1</a>
+                            </li>
+                            <li>
+                                <a href="/work2">2</a>
+                            </li>
+                            <li>
+                                <a href="/work3">3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="others">其他&nbsp;&nbsp;Others<i class="fa-sharp fa-solid fa-link"></i></a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+        </div>
+
+        <!-- R -->
+        <div class="right-container">
+            {% block message %}{% endblock message %}
+        </div>
+    </div>
+
+</body>
+</html>
