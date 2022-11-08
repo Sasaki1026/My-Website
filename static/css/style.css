@@ -138,7 +138,7 @@ ul ul li a{
     width: 30%;
 }
 .icon img{
-    width: 70%;
+    width: 80%;
 }
 .summarycontainer{
     padding: 10px;
@@ -154,8 +154,18 @@ ul ul li a{
     font-size: 20px;
     text-align: left;
 }
+#image{
+    text-align: center;
+}
 
 @media (max-width:600px) {
+    #saintess{
+        width: 80px;
+    }
+    #image{
+        text-align: left;
+        width: 100%;
+    }
 
     #sidebar{
         margin-left: -100px;
@@ -185,4 +195,48 @@ ul ul li a{
     .collapse-btn{
         font-size: 16px;
     }
+
+    .left{
+        text-align: center;
+        font-size: 12px;
+        width: 60%;
+    }
+    .left h3{
+        font-size: 18px;
+    }
+    .right{
+        text-align: center;
+        width: 40%;
+    }
+    .right img{
+        width: 60%;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .text h3{
+        font-size: 18px;
+    }
+    .summarycontainer div h4{
+        font-size: 16px;
+    }
+    .summarycontainer div{
+        font-size: 12px;
+    }
+
+    .link-page-container div h2{
+        font-size: 16px;
+    }
+    .link-page-container div ul li {
+        font-size: 12px;
+    }
+    .link-page-container div ul li a{
+        font-size: 12px;
+    }
+
+    #title{
+        font-size: 20px;
+    }
+
+
 }
