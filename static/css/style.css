@@ -159,6 +159,9 @@ ul ul li a{
 }
 
 @media (max-width:600px) {
+    #comment{
+        font-size: 12px;
+    }
     #saintess{
         width: 80px;
     }
