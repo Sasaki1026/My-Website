@@ -152,13 +152,14 @@ ul ul li a{
 }
 
 @media (max-width:767px) {
+
     .collapse-btn{
         position: relative;
         top: 1%;
-        left: 200px;
+        left: 100px;
         background-color: aquamarine;
         border: none;
-        font-size: 15px;
+        font-size: 30px;
         margin: 10px;
     }
     #comment{
